@@ -1,0 +1,33 @@
+# EOSIO.DISCO CONTRACT BASH SUPPORT
+
+EOS Amsterdam infrastructure needed to autoconfigure against the
+eosio.disco contract.
+
+The `eos-boot' command does not support quering data as of yet, and as such we developed some tooling around it to support our automation.
+
+Alexandre Bourget from EOS Canada asked us to share with the community, gratefull as we are for their work on the `eos-boot` and eos.disco contract. We are happy to oblige.
+
+# Explanation
+
+The code reads itself.
+
+```
+.
+├── README.mkd
+├── _deps
+│   └── string_to_name.cpp
+├── bin
+│   ├── string_to_name_linux
+│   └── string_to_name_mac_osx
+├── join_network
+└── shared
+    ├── common.sh
+    └── eosio_disco.sh
+
+3 directories, 7 files
+
+```
+
+We extracted the usefull parts and join_network prints out all the necessary information.
+
+# Screencast
