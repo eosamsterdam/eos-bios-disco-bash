@@ -1,0 +1,22 @@
+#!/bin/bash
+
+cd "$(dirname "$0")"
+
+source shared/common.sh
+
+seed_network="$1"
+boot_account_name="$2"
+
+# return all connected block producers
+block_producers="$(p2p_peer_address_list $seed_network)"
+
+echo "Block producers p2p-peer-adresses configured:"
+echo "$block_producers"
+echo "\n\n"
+
+# return the geneis_json from the boot node
+genesis_json="$(get_genesis_json $seed_network $boot_account_name)"
+
+echo "Genesis.json  configured:"
+echo "$genesis_json"
+echo "\n\n"
