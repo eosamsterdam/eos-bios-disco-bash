@@ -7,6 +7,11 @@ The `eos-boot' command does not support quering data as of yet, and as such we d
 
 Alexandre Bourget from EOS Canada asked us to share with the community, gratefull as we are for their work on the `eos-boot` and eos.disco contract. We are happy to oblige.
 
+# Screencast
+
+
+[![EOSIO.Disco bash data extraction](https://img.youtube.com/vi/2pym4eNZARM/0.jpg)](https://www.youtube.com/embed/2pym4eNZARM)
+
 # Explanation
 
 The code reads itself.
@@ -29,5 +34,3 @@ The code reads itself.
 ```
 
 We extracted the usefull parts and join_network prints out all the necessary information.
-
-# Screencast
